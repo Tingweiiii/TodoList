@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  margin: auto;
+  background-color: #fa0;
+  padding: 1rem 5rem;
+  overflow-y: hidden;
+}
+
+.app header {
+  font-size: 3rem;
+  color: #000;
+  padding: .5rem 1rem;
+}
+
+.app .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .form input {
+  outline: none;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+}
+
+.app .form button {
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #000;
+  padding: .3rem .6rem;
+}
+
+.app .form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.app .list {
+  height: 70vh;
+  margin: 1rem 0;
+  overflow-y: scroll;
+}
+
+.app .list::-webkit-scrollbar {
+  display: none;
+}
+
+.app .list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #000;
+}
+
+.app .list .item .item-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.app .list .item .item-content::-webkit-scrollbar {
+  display: none;
+}
+
+.app .list .item .item-content input {
+  outline: none;
+  padding: .5rem 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.app .list .item .item-content p {
+  line-height: 1.2;
+}
+
+.app .list .item .item-content .completed {
+  text-decoration: line-through;
+}
+
+.app .list .item .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem 0;
+}
+
+.app .list .item .btn-group label {
+  font-size: 1.5rem;
+  margin: 0 .5rem;
+}
+
+.app .list .item .btn-group label svg {
+  vertical-align: middle;
+}
+
+.app .list .item .btn-group input[type=checkbox] {
+  display: none;
+}
+
+.app .list .item .btn-group .btn {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  margin: 0 .5rem;
+  cursor: pointer;
+}
+
+.app .list .item .btn-group .btn svg {
+  vertical-align: middle;
+}
+
+.app .list .item .btn-group .btn:hover {
+  border: 2px solid #999;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+}
